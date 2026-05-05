@@ -1,0 +1,22 @@
+info:
+  name: update post by id copy
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/posts/233"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "updated title",
+        "content": "content 1"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
