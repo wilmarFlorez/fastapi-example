@@ -5,13 +5,13 @@ info:
 
 http:
   method: PUT
-  url: "{{BASE_URL}}/posts/233"
+  url: "{{BASE_URL}}/posts/1"
   body:
     type: json
     data: |-
       {
         "title": "updated title",
-        "content": "content 1"
+        "content": "new content"
       }
   auth: inherit
 
